@@ -45,17 +45,55 @@
     </hgroup>
     
     <form>
-      <input>
+      <fieldset>
+        <legend><h3>Brands</h3></legend>
+        <table style="text-align:center;">
+              <thead>
+                <tr>
+                  <th scope="col">Coach</th>
+                  <th scope="col">Kate Spade</th>
+                  <th scope="col">Talbots</th>
+                  <th scope="col">Kenneth Cole</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><img src="http://lapalace.com/images/Coach_Logo.gif" width="90px"></td>
+                  <td><img src="http://lapalace.com/images/Coach_Logo.gif" width="90px"></td>
+                  <td><img src="http://lapalace.com/images/Coach_Logo.gif" width="90px"></td>
+                  <td><img src="http://lapalace.com/images/Coach_Logo.gif" width="90px"></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" value="coach" id="coach" checked /></td>
+                  <td><input type="checkbox" value="coach" id="coach" checked /></td>
+                  <td><input type="checkbox" value="coach" id="coach" checked /></td>
+                  <td><input type="checkbox" value="coach" id="coach" checked /></td>
+                </tr>
+              </tbody>
+            </table>       
+      </fieldset>
+        
+      <hgroup>
+        <h2>Tell us about yourself and your blog:</h2>
+      </hgroup>  
+        
+      <p><label>Name: <input type="text" name="fullname" placeholder="Diane Keaton" required></label></p>
+      <p><label>Email: <input type="email" name="email" placeholder="diane@gmail.com" required></label></p>
+      <p><label>Blog URL: <input type="url" name="url" placeholder="yourblog.com" required></label></p>
+      <p><label>Monthly Visitors: 0 <input type="range" min="0" max="100000" step="1000" name="traffic"> 100,000</label></p>
+        
+      <input type="submit">
+      
     </form>
   </section>
   
 
   <footer> 
-    <nav> 
-      <h1>Navigation</h1>
+    <nav>
       <ul> 
         <li><a href="/">Home</a></li>
-        <li><a href="/standards/">Standards</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
       </ul> 
     </nav> 
   </footer>
